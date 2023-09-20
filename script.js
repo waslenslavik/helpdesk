@@ -1,3 +1,5 @@
+const chk = document.getElementById("chk")
+
 function toggleMenu(){
     const menuMobile = document.getElementById("menu-mobile")
 
@@ -7,3 +9,7 @@ function toggleMenu(){
         menuMobile.className = "menu-mobile-active"
     }
 }
+
+chk.addEventListener('change', ()=>{
+    document.body.classList.toggle('white')
+})
